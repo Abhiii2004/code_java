@@ -22,8 +22,9 @@ class game{
         inputNumber=sc.nextInt();
     }
     boolean isCorrectNumber() {
+        noOfGuesses ++;
     if (inputNumber==number) {
-        System.out.format("yes you guessed it right,it was %d\n you guessed it in %d attempts ",number);
+        System.out.format("yes you guessed it right,it was %d\n you guessed it in %d attempts ",number,noOfGuesses);
         return true;
     }
     else if(inputNumber<number){
